@@ -1,0 +1,106 @@
+body{
+	font-size: calc(13px + 0.32vw);
+	color: #333;
+	background-color: #ccc;
+	font-family: "Helvetica", sans-serif;
+}
+
+nav{
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+
+	height: 8vh;
+	padding: 1vh 1vw;
+
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7);
+	background-color: #cfc;
+	user-select: none;
+}
+
+nav .logo{
+	width: 30%;
+	max-width: 250px;
+	min-width: 180px;
+}
+
+nav ul{
+	display: flex;
+	align-items: center;
+}
+
+nav ul li{
+	display: inline;
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 20px;
+
+	padding: 4vh 10px;
+	transition: 0.2s;
+}
+
+nav ul li a:hover{
+	background-color: #fff;
+}
+
+.container{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	align-content: space-around;
+	flex-wrap: wrap;
+
+	width: 80%;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+
+	width: 250px;
+	height: 30%;
+	background-color: rgba(51, 153, 51, 1);
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+
+.botao button{
+	width: 8rem;
+	height: 2.8rem;
+	font-size: 1rem;
+	font-family: "Helvetica", sans-serif;
+	border-radius: 0.8rem;
+	background-color: rgba(255, 255, 255, 0.9);
+	transition: 0.2s;
+	border: none;
+	box-shadow: 0.08rem 0.08rem 0.25rem 0.1rem rgba(0,0,0,0.7);
+}
+
+.botao{
+	text-decoration: none;
+	color: #333;
+	user-select: none;
+}
+
+.botao button:hover{
+	cursor: pointer;
+	box-shadow: 0.08rem 0.08rem 0.15rem 0.1rem rgba(0,0,0,0.7) inset;
+	transition: 0.2s;
+}
+
+.icon{
+	font-size: 40px;
+	color: rgba(255, 255, 255, 0.9)
+}

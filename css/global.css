@@ -46,21 +46,27 @@ nav ul li a{
 	font-size: 20px;
 
 	padding: 4vh 10px;
-	transition: 0.2s;
+	transition: background 0.2s;
 }
 
 nav ul li a:hover{
-	background-color: #fff;
+	background: #fff;
 }
 
 .container{
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-around;
 	align-content: space-around;
-	flex-wrap: wrap;
 
 	width: 80%;
+}
+
+.column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .card{
@@ -103,4 +109,25 @@ nav ul li a:hover{
 .icon{
 	font-size: 40px;
 	color: rgba(255, 255, 255, 0.9)
+}
+
+@media only screen and (max-width: 640px) {
+	aside{
+		display: none !important;
+	}
+
+	.column{
+		width: 100vw;
+		justify-content: stretch !important;
+	}
+
+	footer{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	article{
+		width: 100% !important;
+		max-width: 100% !important;
+	}
 }

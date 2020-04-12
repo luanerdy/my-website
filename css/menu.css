@@ -1,0 +1,54 @@
+.menu-button{
+	display: none;
+}
+
+@media only screen and (max-width: 640px) {
+
+	nav {
+		justify-content: center;
+
+	}
+
+	nav ul{
+		display: none;
+	}
+
+	nav.isActive {
+		height: 30%;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-between;
+		transition: height 0.3s;
+	}
+
+	nav.isActive ul{
+		display: inherit;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+
+		margin: 0 0 10px;
+	}
+
+	nav ul li{
+		margin: 3px 0;
+	}
+
+	nav ul li a{
+		padding: 0 50vw;
+	}
+
+	nav div{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 99%;
+	}
+
+	.menu-button{
+		display: inherit;
+		font-size: 28px;
+	}
+
+}

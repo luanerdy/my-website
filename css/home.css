@@ -4,12 +4,6 @@ main{
 	overflow-x: hidden;
 }
 
-.column{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 aside{
 	justify-content: space-around;
 
@@ -25,9 +19,12 @@ aside figure{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	align-content: space-between;
+	justify-content: center;
 	text-align: center;
 
 	width: 90%;
+	min-height: 40%;
 
 	color: #333;
 	background-color: rgba(255, 255, 255, 0.7);

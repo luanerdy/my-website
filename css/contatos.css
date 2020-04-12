@@ -1,0 +1,50 @@
+.contact-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	width: 50%;
+}
+
+.contato{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	min-width: 320px;
+
+	font-size: 20px;
+}
+
+.contato:not(:first-of-type){
+	border-top: 2px solid rgba(51, 51, 51, 0.5);
+	padding-top: 10px;
+}
+
+.contato:not(:last-of-type){
+	padding-bottom: 10px;
+}
+
+.contato img{
+	width: 50px;
+	filter: opacity(70%);
+}
+
+.contato a{
+	color: #333;
+	text-decoration: none;
+	transition: 0.2s;
+}
+
+.contato a:hover{
+	color: #fff;
+	font-size: 120%;
+}
+
+.title{
+	margin-bottom: 50px;
+	color: #333;
+	text-align: center;
+}

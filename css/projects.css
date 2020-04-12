@@ -1,0 +1,99 @@
+.project-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.project-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	margin: 12vh 0 0;
+	width: 100%;
+	height: calc(100% - 6vh);
+}
+
+.project-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}
+
+.project-container span{
+	font-size: 50px;
+	cursor: pointer;
+}
+
+.photo img {
+	height: 27vw;
+	min-height: 150px;
+}
+
+.info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 60%;
+	padding: 10px 0 0;
+	margin: 10px 0;
+	border-top: 2px solid rgba(0, 0, 0, 0.5);
+
+	font-size: calc(10px + 1vw);
+}
+
+.info a{
+	color: #333;
+	text-decoration: none;
+	transition: 0.2s;
+	user-select: none;
+	cursor: pointer;
+	text-align: center;
+}
+
+.info a:hover{
+	font-size: 120%;
+	color: white;
+}
+
+.info img{
+	height: 80px;
+}
+
+.wrap-balls{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-top: 10px;
+	height: 10px;
+	width: 270px;
+}
+
+.ball{
+	width: 10px;
+	height: 10px;
+
+	border-radius: 50%;
+	background-color: #33CC33;
+}
+
+.active-ball{
+	border: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (max-width: 640px) {
+
+	.project-column{
+		width: 100%;
+	}
+	
+	.photo img {
+		height: 40vw;
+	}
+
+}
